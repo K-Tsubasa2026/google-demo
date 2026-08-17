@@ -67,3 +67,6 @@ imageSearchBtn.addEventListener('click', () => {
 aiSearchBtn.addEventListener('click', () => {
     window.location.href = '404.html';
 });
+
+// モーダルオーバーレイの取得（ポップアップ表示時）
+const modalOverlay = document.getElementById('modal-overlay');
