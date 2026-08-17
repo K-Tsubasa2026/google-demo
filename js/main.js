@@ -48,3 +48,22 @@ function updateDoneButton() {
 // 入力するたびにボタンの状態を確認
     nameInput.addEventListener('input', updateDoneButton);
     urlInput.addEventListener('input', updateDoneButton);
+
+// 404へ移行
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    window.location.href = '404.html';
+});
+
+voiceSearchBtn.addEventListener('click', () => {
+    window.location.href = '404.html';
+});
+
+imageSearchBtn.addEventListener('click', () => {
+    window.location.href = '404.html';
+});
+
+
+aiSearchBtn.addEventListener('click', () => {
+    window.location.href = '404.html';
+});

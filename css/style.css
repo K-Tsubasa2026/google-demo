@@ -2,7 +2,14 @@ body{
     background-color:#252321;
 }
 
+/* /////404.html///// */
+.not-found{
+    display: flex;
+    justify-content: center;
+    background-color: #fff; 
+}
 
+/* /////index.html///// */
 .demo{
     background-color: #f49c31;
     text-align: center;
