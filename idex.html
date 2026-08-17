@@ -15,7 +15,7 @@
     <div class="demo">
         <p>※これは学習用に作成したUI模写のデモページです。実際のGoogleとは一切関係がありません。</p>
     </div>
-    
+
     <main class="main-content">
         <div class="title">
             <h1>Google </h1>
@@ -45,6 +45,7 @@
         </form>
     </main>
 
+    <!-- ショートカットボタン -->
     <div class="shortcut-area">
         <div id="shortcut-btn" class="shortcut" data-tooltip="ショートカットを追加">
             <i class="fa-solid fa-circle-plus plus-icon"></i>
@@ -52,6 +53,29 @@
         </div>
     </div>
 
+    <!-- ショートカットポップアップ -->
+    <div id="shortcut-popup" class="shortcut-popup">
+        <h2>ショートカットを追加</h2>
+        <div class="shortcut-form">
+            <div class="shortcut-field">
+                <label class="shortcut-label" for="name-input">名前</label>
+                <input type="text" id="name-input">
+            </div>
 
+            <div class="shortcut-field">
+                <label class="shortcut-label" for="url-input">URL</label>
+                <input type="url" id="url-input">
+            </div>
+        </div>
+        <!-- 
+        「<label for="">,<input id="">」同じ内容を書くと紐付けできる（文字(label)をクリックすると、ボタンが押されたとinputが認識する）
+        -->
+        <div class="action-btn">
+            <button id="cancel-btn" type="button" class="cancel-btn">キャンセル</button>
+            <button id="done-btn" type="button" class="done-btn" disabled>完了</button>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
