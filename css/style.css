@@ -313,3 +313,89 @@ body{
 .modal-overlay.is-open {
     display: block;
 }
+
+/* ========================================
+   レスポンシブ対応
+======================================== */
+@media (max-width: 600px) {
+
+    /* 全体 */
+    .main-content {
+        padding: 60px 16px 16px 0;
+    }
+
+    /* タイトル */
+    .title {
+        gap: 6px;
+        margin-bottom: 30px;
+    }
+
+    .title h1 {
+        font-size: 52px;
+    }
+
+    .title span {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* 検索フォーム */
+    .search-form {
+        width: 100%;
+        height: 50px;
+
+        padding: 12px 12px;
+        gap: 8px;
+        box-sizing: border-box;
+    }
+
+    /* 検索入力欄 */
+    .input-search {
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    /* アイコンボタン */
+    .search-btn {
+        padding: 3px;
+        flex-shrink: 0;
+    }
+
+    .ai-search-btn {
+        padding: 8px;
+        width: 30px;
+        height: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: transparent;
+        border-radius: 0;
+
+    }
+
+    /*　スマホ版の際のみAiモードの文言を非表示　*/
+    .ai-search-btn span{
+        display: none;
+    }
+
+    /* ショートカット */
+    .shortcut {
+        width: 110px;
+        padding: 15px;
+    }
+
+    .shortcut-popup {
+        width: calc(100% - 32px);
+        height: auto;
+
+        max-height: 90vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .shortcut-field input {
+        width: 100%;
+    }
+}
