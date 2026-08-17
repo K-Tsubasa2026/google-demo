@@ -1,0 +1,206 @@
+body{
+    background-color:#252321;
+}
+
+
+.demo{
+    background-color: #f49c31;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column; /* タイトルとフォームを縦方向にする */
+    align-items: center; /* 横方向 */
+    justify-content: center; /* 縦方向 */
+    padding-top: 100px;
+}
+
+
+.title{
+        /* border:1px solid #fff; */
+    display: flex;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.title h1{
+        /* border:1px solid #fff; */
+
+    font-size:90px;
+}
+
+.title span{
+        /* border:1px solid #fff; */
+
+    font-size:20px;
+}
+
+
+.search-form{
+    display: flex;
+    align-items: center;
+
+    width:700px;
+    height: 50px;
+
+    background-color: #fff;
+    border-radius: 100px;
+
+    padding:10px 14px;
+    gap:15px;
+    margin-bottom: 40px;
+
+}
+
+.input-search{
+    /*input標準ブラウザ機能(枠線や、背景色などの白い箱)の削除*/
+    flex:1; /* アイコンやボタン以外の余った横幅を、入力欄が使用 */
+    background-color: transparent; /* 背景透明 */
+    border:none;
+    outline:none; /* クリックしたときに表示される標準の外枠を消す */
+}
+
+.search-btn{
+    /*button標準ブラウザ機能(枠線や、背景色などの白い箱)の削除*/
+    background-color: transparent; /* 背景透明 */
+    border:none;
+    outline:none; /* クリックしたときに表示される標準の外枠を消す */
+    cursor: pointer;
+    padding: 5px;
+
+    position: relative;
+}
+
+.ai-search-btn{
+    background-color: #e3dfdf;
+    border:none;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 5px;
+
+    position: relative;
+}
+
+.search-btn::after,
+.ai-search-btn::after{
+    content: attr(data-tooltip);
+    position: absolute;
+
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    white-space: nowrap;
+    padding: 5px 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+
+    font-size: 10px;
+    white-space: nowrap;
+
+    /* マウスを乗せる前はツールチップを非表示 */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.2s;
+}
+
+/* マウスを乗せたときだけツールチップを表示 */
+.search-btn:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.ai-search-btn:hover::after {
+    opacity: 1;
+    visibility: visible; 
+}
+
+/* ショートカットを配置する範囲 */
+.shortcut-area{
+    display: flex;
+    align-items: center; /* 横 */
+    justify-content: center; /* 縦 */
+    min-height: 100px;
+}
+
+/* ショートカット本体 */
+
+.shortcut{
+        /* border:1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 横 */
+    justify-content: center; /* 縦 */
+    position: relative;
+    gap: 10px;
+
+    padding: 20px;
+    cursor: pointer;
+    width:150px;
+    border-radius: 10px;
+    
+     /* 通常時は背景を透明にする */
+    background-color: transparent;
+    transition: background-color 0.2s;
+}
+
+/* マウスを乗せたときの背景 */
+.shortcut:hover {
+    background-color: rgb(99, 98, 98);
+}
+
+.plus-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    color: rgba(207, 202, 202, 0.5);
+}
+
+/* ショートカットの文字 */
+.shortcut-text {
+    color: #ffffff;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* ツールチップ */
+.shortcut::after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 6px 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 3px;
+
+    font-size: 10px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.2s;
+}
+
+/* マウスを乗せたときにツールチップを表示 */
+.shortcut:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
