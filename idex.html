@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学習用デモ（PJ-google-demo）</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/6f90a8d84f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="demo">
+    <p>※これは学習用に作成したUI模写のデモページです。実際のGoogleとは一切関係がありません。</p>
+
+    <main class="main-content">
+        <div class="title">
+            <h1>Google </h1>
+            <span>(練習用模写)</span>
+        </div>
+
+        <form action="" id="search-form" class="search-form">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <input type="text" class="input-search" placeholder="学習用デモgoogleで検索またはURLを入力">
+
+            <button type="button" id="voice-search-btn" class="search-btn" data-tooltip="音声検索">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+
+            <button type="button" id="image-search-btn" class="search-btn" data-tooltip="画像で検索">
+                <i class="fa-solid fa-camera"></i>
+            </button>
+
+            <button type="button" id="ai-search-btn" class="ai-search-btn" data-tooltip="google検索のAIモードに質問する">
+                    <i class="fa-brands fa-sistrix"></i><span>AIモード</span>
+            </button>
+            <!-- 
+            「<input>」入力欄
+            「<input placeholder="">」入力前に薄く表示される説明
+            「<button data-tooltip="">ツールチップ（マウスオンしたら出てくる注釈）」
+            -->
+        </form>
+    </main>
+
+    <div class="shortcut-area">
+        <div id="shortcut-btn" class="shortcut" data-tooltip="ショートカットを追加">
+            <i class="fa-solid fa-circle-plus plus-icon"></i>
+            <span class="shortcut-text">ショートカット...</span>
+        </div>
+    </div>
+
+
+</body>
+</html>
