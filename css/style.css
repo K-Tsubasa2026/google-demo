@@ -324,19 +324,8 @@ body{
         padding: 60px 16px 16px 0;
     }
 
-    /* タイトル */
-    .title {
-        gap: 6px;
-        margin-bottom: 30px;
-    }
-
     .title h1 {
         font-size: 52px;
-    }
-
-    .title span {
-        font-size: 13px;
-        white-space: nowrap;
     }
 
     /* 検索フォーム */
